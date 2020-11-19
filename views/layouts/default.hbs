@@ -10,18 +10,23 @@
 </head>
 <body>
   <div>
-      <h1> Welcome to Team LAARJ123's Application</h1>
-      <h2><i> Team Laarg </i></h2>
-    {{{body}}}
-</div>
-<div>
-  <h2>Add an event</h2>
-    <form action="/event" method="post">
-       title: <input name="title" type="text" /> <br />
-       description: <input name="description" type="text" /> <br />
-       <br />
-        <input type="submit" name="submit" value="submit" />
-    </form>
+      <div class="jumbotron text-center">
+        <h1>Welcome to LAARJ Application</h1>
+        <p class="lead text-muted">View posted events below and add new ones.</p>
+      </div>
+    <div class="container" style="margin-bottom: 2em">
+        {{{body}}}
+    </div>
+    <div class="container" style="clear: both; padding: 2em">
+    <h2>Add an event</h2>
+        <div class="form-group">
+        <form action="/event" method="post">
+            Title: <input name="title" type="text" class="form-control" /> <br />
+            Description: <input name="description" type="text" class="form-control" /> <br />
+            <input type="submit" name="submit" value="Submit" class="btn btn-primary" />
+        </form>
+        </div>
+    </div>
   </div>
 </body>
 </html>
