@@ -22,8 +22,6 @@ const hbs = require('express-handlebars');
 // details here: https://www.npmjs.com/package/request
 var request = require('request');
 
-var customScript = require('./scripts');
-
 // create the server
 const app = express();
 
