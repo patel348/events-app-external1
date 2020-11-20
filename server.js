@@ -22,6 +22,8 @@ const hbs = require('express-handlebars');
 // details here: https://www.npmjs.com/package/request
 var request = require('request');
 
+var customScript = require('./scripts');
+
 // create the server
 const app = express();
 
@@ -111,9 +113,6 @@ app.post('/event',
     });
 
 // create other get and post methods here - version, login,  etc
-
-
-
 
 // generic error handling
 app.use((err, req, res, next) => {
